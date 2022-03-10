@@ -1,7 +1,9 @@
 <script setup lang="ts">
     import { useMeta } from 'vue-meta';
+    import { ref, Ref } from 'vue';
+    import { ReloadPWA } from '@components/index.ts';
 
-    const webTitle = 'Mohsen Fallahnejad officials website';
+    const webTitle: Ref<string> = ref('Mohsen Fallahnejad officials website');
 
     useMeta({
         title    : 'Front-end developer',
@@ -14,6 +16,8 @@
 
 <template>
     <div id="app">
+        <ReloadPWA />
+
         <metainfo>
             <template #title="{ content }">
                 {{ content ? `${webTitle} | ${content}`: webTitle }}

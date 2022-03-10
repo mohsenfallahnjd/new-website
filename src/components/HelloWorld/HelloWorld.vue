@@ -2,14 +2,13 @@
     import { ref, onMounted } from 'vue';
 
     const count = ref(0);
+
     // eslint-disable-next-line no-unused-vars
     const props = defineProps({
         msg: String,
     });
 
-    onMounted(() => {
-        console.log();
-    });
+    onMounted(() => {});
 </script>
 
 <!-- eslint-disable @intlify/vue-i18n/no-raw-text -->
@@ -17,7 +16,7 @@
 <template>
     <h1>{{ msg }}</h1>
 
-    <h2>{{ $t("home.title") }}</h2>
+    <h2>{{ $t('home.title') }}</h2>
     <p>
         Recommended IDE setup:
         <a
