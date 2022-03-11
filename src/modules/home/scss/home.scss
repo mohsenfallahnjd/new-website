@@ -1,11 +1,114 @@
 // -------------------------------------------------------------------------- //
 // Modules: Home
 // -------------------------------------------------------------------------- //
-#app {
-    margin-top: 60px;
-    color: #2C3E50;
-    font-family: "Avenir", "Helvetica", "Arial", sans-serif;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@use "@/assets/scss/colors" as colors;
+
+.m-home {
+    display: flex;
+    flex-direction: column;
+
+    &__intro-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 69vh;
+    }
+
+    .hello {
+        font-weight: 600;
+        font-size: 4.5em;
+    }
+
+    .intro {
+        margin-top: 0.3em;
+        margin-bottom: 1.3em;
+        font-weight: 500;
+        font-size: 2.2em;
+
+        b {
+            font-weight: 600;
+        }
+    }
+
+    .description {
+        margin-bottom: 15px;
+    }
+
+    p {
+        max-width: 28em;
+        font-weight: 300;
+        font-size: 1.6em;
+        line-height: 1.4;
+
+        &.mt-15 {
+            margin-top: 15px;
+        }
+
+        .twitter {
+            display: inline-flex;
+            overflow: hidden;
+            margin: 0 3px;
+            color: mix(white, colors.$color-blue, 20%);
+            font-weight: 400;
+            text-decoration: none;
+
+            span {
+                position: relative;
+                transition: transform 0.3s;
+
+                &::before {
+                    content: attr(data-hover);
+                    position: absolute;
+                    top: 100%;
+                    font-weight: 500;
+                    transform: translateZ(0);
+                }
+            }
+
+            &:hover span {
+                transform: translateY(-100%);
+            }
+        }
+    }
+
+    .user-name {
+        padding-bottom: 3px;
+        font-weight: 400;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    > .c-section {
+        margin-top: 100px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 50px;
+        }
+
+        & ~ .c-section {
+            margin-top: 0 !important;
+            border-top: none;
+        }
+
+        &.bold-title {
+            .c-section__title {
+                position: relative;
+                z-index: 2;
+                margin-bottom: 40px;
+                font-size: 26px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 33px;
+                    z-index: -1;
+                    width: 250px;
+                    border-bottom: 1px solid colors.$color-blue;
+                    transform: translate(-97%);
+                }
+            }
+        }
+    }
 }

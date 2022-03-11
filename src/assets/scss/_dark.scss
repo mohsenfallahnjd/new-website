@@ -1,0 +1,118 @@
+// -------------------------------------------------------------------------- //
+// Styles : Dark
+// -------------------------------------------------------------------------- //
+@use "colors" as colors;
+
+:root {
+    --white: #FFFFFF;
+    --black: #121314;
+}
+
+$neon-text-shadow:
+    0 0 4px colors.$color-blue,
+    0 0 11px colors.$color-blue,
+    0 0 19px colors.$color-blue,
+    0 0 40px colors.$color-blue,
+    0 0 80px colors.$color-blue,
+    0 0 90px colors.$color-blue,
+    0 0 100px colors.$color-blue,
+    0 0 150px colors.$color-blue;
+$neon-box-shadow:
+    0 0 0.2rem colors.$color-blue,
+    0 0 0.2rem 3px colors.$color-blue,
+    0 0 2rem 3px colors.$color-blue,
+    0 0 0.8rem 3px colors.$color-blue,
+    0 0 2.8rem colors.$color-blue,
+    inset 0 0 1.3rem colors.$color-blue;
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+body.dark {
+    background-color: var(--black);
+    color: var(--white);
+
+    .twitter {
+        overflow: visible !important;
+
+        svg {
+            color: mix(white, colors.$color-blue, 30%);
+        }
+
+        span {
+            transform: unset !important;
+
+            &::before {
+                content: none !important;
+            }
+        }
+    }
+
+    .neon-animation {
+        color: colors.$color-white !important;
+        animation: flicker 1.5s infinite alternate;
+    }
+
+    .neon {
+        color: colors.$color-white !important;
+        text-shadow: $neon-text-shadow;
+    }
+
+    .c-section {
+        position: relative;
+        border-top: none !important;
+
+        & ~ .c-section::before {
+            content: none;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            right: 10px;
+            left: 10px;
+            box-shadow: $neon-box-shadow;
+        }
+
+        &.bold-title {
+            .c-section__title::after {
+                box-shadow:
+                    0 0 0.2rem #0000FF,
+                    0 0 0.2rem 1px #0000FF,
+                    0 0 2rem 1px #0000FF,
+                    0 0 0.8rem 1px #0000FF,
+                    0 0 2.8rem #0000FF,
+                    inset 0 0 1.3rem #0000FF;
+            }
+        }
+    }
+
+    .c-skills__item__title,
+    .c-socials__item__title,
+    .c-built__item__technology,
+    .c-built__item__link-title {
+        color: var(--white);
+    }
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: $neon-text-shadow;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}

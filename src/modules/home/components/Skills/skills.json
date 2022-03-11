@@ -1,0 +1,112 @@
+{
+    "items": [
+        {
+            "active": true,
+            "name": "Vue",
+            "link": "https://v3.vuejs.org/",
+            "icon": "vue.svg"
+        },
+        {
+            "active": true,
+            "name": "Vite",
+            "link": "https://vitejs.dev/",
+            "icon": "vite.png"
+        },
+        {
+            "active": true,
+            "name": "JS",
+            "link": "https://www.javascript.com/",
+            "icon": "javascript.svg"
+        },
+        {
+            "active": true,
+            "name": "typescript",
+            "link": "https://www.typescriptlang.org/",
+            "icon": "typescript.svg"
+        },
+        {
+            "active": true,
+            "name": "NodeJs",
+            "link": "https://nodejs.org/",
+            "icon": "node-js.svg"
+        },
+        {
+            "active": true,
+            "name": "Sass",
+            "link": "https://sass-lang.com/",
+            "icon": "sass.svg"
+        },
+        {
+            "active": true,
+            "name": "Css",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "icon": "css3.svg"
+        },
+        {
+            "active": true,
+            "name": "nuxt",
+            "link": "https://nuxtjs.org/",
+            "icon": "nuxt.png"
+        },
+        {
+            "active": true,
+            "name": "Html",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "icon": "html-5.svg"
+        },
+        {
+            "active": true,
+            "name": "bash",
+            "link": "https://www.gnu.org/software/bash/",
+            "icon": "bash.svg"
+        },
+        {
+            "active": true,
+            "name": "vim",
+            "link": "https://en.wikipedia.org/wiki/Vim_(text_editor)",
+            "icon": "vim.png"
+        },
+        {
+            "active": true,
+            "name": "Webpack",
+            "link": "https://webpack.js.org/",
+            "icon": "webpack.svg"
+        },
+        {
+            "active": true,
+            "name": "Git",
+            "link": "https://git-scm.com/",
+            "icon": "git.svg"
+        },
+        {
+            "active": true,
+            "name": "PWA",
+            "link": "https://web.dev/progressive-web-apps/",
+            "icon": "pwa.png"
+        },
+        {
+            "active": true,
+            "name": "python",
+            "link": "https://www.python.org/",
+            "icon": "python.svg"
+        },
+        {
+            "active": true,
+            "name": "c++",
+            "link": "https://en.wikipedia.org/wiki/C%2B%2B",
+            "icon": "c++.svg"
+        },
+        {
+            "active": true,
+            "name": "Figma",
+            "link": "https://www.figma.com/",
+            "icon": "figma.svg"
+        },
+        {
+            "active": true,
+            "name": "PhotoShop",
+            "link": "https://www.adobe.com/products/photoshop.html",
+            "icon": "photoshop.svg"
+        }
+    ]
+}

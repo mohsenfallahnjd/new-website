@@ -1,0 +1,50 @@
+// -------------------------------------------------------------------------- //
+// Style: Colors
+// -------------------------------------------------------------------------- //
+@use "sass:map";
+
+/// Colors Map
+///
+/// @name colors
+/// @access private
+///
+$colors:(
+    "primary": #154360,
+    "blue": #0000FF,
+    "green": #008000,
+    "gray": #C0C0C0,
+    "black": #121314,
+    "white": #FFFFFF,
+);
+
+/// Properties Map
+///
+/// @name Properties
+/// @access private
+///
+$properties: ("color", "background-color");
+
+/// Colors Helper generator
+///
+/// @name colors
+/// @access private
+///
+@mixin color-helper($color-map: (), $properties-map: ()) {
+    @each $key, $value in $colors {
+        @each $p in $properties-map {
+            .#{$p}-#{$key} {
+                #{$p}: $value;
+            }
+        }
+    }
+}
+
+@include color-helper($colors, $properties);
+
+// Color Variables
+$color-primary: map-get($colors, "primary");
+$color-blue: map-get($colors, "blue");
+$color-green: map-get($colors, "green");
+$color-gray: map-get($colors, "gray");
+$color-black: map-get($colors, "black");
+$color-white: map-get($colors, "white");

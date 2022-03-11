@@ -1,17 +1,73 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-    import HelloWorld from '@/components/HelloWorld.vue';
+    import {
+        Section, Skills, Socials, Built,
+    } from '@modules/home/components/index.ts';
 </script>
 
 <template>
-    <div>
-        <img
-            alt="Vue logo"
-            src="@/assets/logo.png"
+    <div class="m-home">
+        <div class="m-home__intro-section">
+            <h1 class="hello">
+                {{ $t('home.hello') }}
+            </h1>
+            <p
+                class="intro"
+                v-html="$t('home.my_name', { name: `<b class='first-name'>${$t('home.first_name')}</b>` })"
+            />
+
+            <p class="description">
+                {{ $t('home.my_description') }}
+            </p>
+
+            <p>
+                <span>{{ $t('home.about') }}</span>
+                <a
+                    href="https://twitter.com/mohsenfallahnjd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="twitter"
+                >
+                    <span
+                        class="iconify"
+                        data-icon="line-md:twitter-twotone"
+                    />
+                    <span
+                        data-hover="Twitter"
+                        class="neon"
+                    >
+                        {{ $t('home.twitter') }}
+                    </span>
+                </a>
+                <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text -->
+                <span>{{ `.` }}</span>
+            </p>
+
+            <p v-html="$t('home.on_social',{ userName: `<span class='color-blue user-name neon-animation'>${$t('home.user_name')}</span>` })" />
+
+            <p class="mt-15">
+                {{ $t('home.outside') }}
+            </p>
+        </div>
+
+        <Section :title="$t('home.skills')">
+            <Skills />
+        </Section>
+
+        <Section
+            :title="$t('home.built_things')"
+            class="bold-title"
+            col
         >
-        <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+            <Built />
+        </Section>
+
+        <Section
+            :title="$t('home.socials')"
+            col
+        >
+            <Socials />
+        </Section>
     </div>
 </template>
 
-<style src="@/modules/home/scss/home.scss" lang="scss" />
+<style src="../scss/home.scss" lang="scss" />

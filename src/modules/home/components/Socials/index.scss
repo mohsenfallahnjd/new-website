@@ -1,0 +1,66 @@
+// -------------------------------------------------------------------------- //
+// Components: Socials
+// -------------------------------------------------------------------------- //
+@use "@/assets/scss/colors" as colors;
+
+.c-socials {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    &__item {
+        display: flex;
+        flex: 1 1 5%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 15px;
+
+        &::marker {
+            content: none;
+        }
+
+        &__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                animation-name: up-down;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+            }
+        }
+
+        &__logo {
+            object-fit: contain;
+            max-width: 25px;
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+
+        &__title {
+            color: colors.$color-black;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

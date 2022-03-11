@@ -1,0 +1,112 @@
+{
+    "items": [
+        {
+            "active": true,
+            "name": "Vite Starter",
+            "repo": "https://github.com/mohsenfallahnjd/vite-starter",
+            "description": "The project starter base on vite, vue3 and typescript with some plugins like ESLint, Stylelint, vue-router and i18n.",
+            "demo" : "",
+            "technologies": ["vite", "vue3", "eslint", "stylelint", "i18n", "typescript", "javascript", "pwa", "vueMeta"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "Gitlab Notify",
+            "repo": "https://github.com/mohsenfallahnjd/gitlabnotify",
+            "description": "Get gitlab merge requests notification on your telegram",
+            "demo" : "",
+            "technologies": ["javascript"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "Convert files extension",
+            "repo": "https://github.com/mohsenfallahnjd/convert-files-extension",
+            "description": "Convert Files Extension from any to any",
+            "demo" : "",
+            "technologies": ["javascript"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "NaiveBayes",
+            "repo": "https://github.com/mohsenfallahnjd/NaiveBayes",
+            "description": "Implementation of NaiveBayes algorithm",
+            "demo" : "",
+            "technologies": ["python"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "Regression",
+            "repo": "https://github.com/mohsenfallahnjd/Regression",
+            "description": "Implementation of Regression algorithm",
+            "demo" : "",
+            "technologies": ["python"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "EigenFaces",
+            "repo": "https://github.com/mohsenfallahnjd/EigenFaces",
+            "description": "Implementation of EigenFaces algorithm",
+            "demo" : "",
+            "technologies": ["python"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "Gender and Age Detection",
+            "repo": "https://github.com/mohsenfallahnjd/Gender-and-Age-Detection",
+            "description": "Implementation of Gender and Age Detection",
+            "demo" : "",
+            "technologies": ["python"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "OurTube",
+            "repo": "https://github.com/mohsenfallahnjd/liveStream",
+            "description": "The Live Stream Platform",
+            "demo" : "https://tv.guilandev.ir/",
+            "technologies": ["Vue", "Laravel", "pwa"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "CovidTracker",
+            "repo": "https://github.com/mohsenfallahnjd/covid-tracker",
+            "description": "PWA Coronavirus Tracker",
+            "demo" : "",
+            "technologies": ["Vue", "pwa"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "ScrollBar",
+            "repo": "https://github.com/mohsenfallahnjd/vueProject-05-ScrollBar",
+            "description": "Vue simple ScrollBar",
+            "demo" : "",
+            "technologies": ["Vue"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "SpeechRecogniser",
+            "repo": "https://github.com/mohsenfallahnjd/004-JS-SpeechRecogniser",
+            "description": "Simple Speech Recogniser on js",
+            "demo" : "",
+            "technologies": ["javascript"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "Rock Paper Scissors",
+            "repo": "https://github.com/mohsenfallahnjd/003-JS-Rock-Paper-Scissors",
+            "description": "Simple Rock Paper Scissors game",
+            "demo" : "",
+            "technologies": ["javascript"],
+            "pwa": false
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "items":[
+
+        {
+            "active": true,
+            "name"  : "codepen",
+            "link"  : "https://codepen.io/mohsenfallahnjd",
+            "icon"  : "codepen.svg"
+        },
+        {
+            "active": true,
+            "name"  : "dev",
+            "link"  : "https://dev.to/mohsenfallahnjd",
+            "icon"  : "dev.svg"
+        },
+        {
+            "active": true,
+            "name"  : "github",
+            "link"  : "https://github.com/mohsenfallahnjd",
+            "icon"  : "github.svg"
+        },
+        {
+            "active": true,
+            "name"  : "gitlab",
+            "link"  : "https://gitlab.com/mohsenfallahnjd",
+            "icon"  : "gitlab.svg"
+        },
+        {
+            "active": true,
+            "name"  : "gmail",
+            "link"  : "mailto:mohsenfallahnjd@gmail.com",
+            "icon"  : "gmail.svg"
+        },
+        {
+            "active": true,
+            "name"  : "instagram",
+            "link"  : "https://instagram.com/mohsenfallahnjd",
+            "icon"  : "instagram.svg"
+        },
+        {
+            "active": true,
+            "name"  : "linkedin",
+            "link"  : "https://linkedin.com/in/mohsenfallahnjd",
+            "icon"  : "linkedin.svg"
+        },
+        {
+            "active": true,
+            "name"  : "medium",
+            "link"  : "https://medium.com/@mohsenfallahnjd",
+            "icon"  : "medium.svg"
+        },
+        {
+            "active": true,
+            "name"  : "spotify",
+            "link"  : "https://open.spotify.com/user/72viqlcr5pqgmnmjtqh8w5980?si=n_n--xPIQv2Ga8epY9Wjfw",
+            "icon"  : "spotify.svg"
+        },
+        {
+            "active": true,
+            "name"  : "meet",
+            "link"  : "#mohsenfallahnjd@gmail.com",
+            "icon"  : "meet.svg"
+        },
+        {
+            "active": true,
+            "name"  : "skype",
+            "link"  : "skype:samcharly11?chat",
+            "icon"  : "skype.svg"
+        },
+        {
+            "active": true,
+            "name"  : "soundcloud",
+            "link"  : "https://soundcloud.com/mohsenfallahnjd",
+            "icon"  : "soundcloud.svg"
+        },
+        {
+            "active": true,
+            "name"  : "telegram",
+            "link"  : "https://telegram.me/mohsenfallahnjd",
+            "icon"  : "telegram.svg"
+        },
+        {
+            "active": true,
+            "name"  : "facebook",
+            "link"  : "https://www.facebook.com/mohsenfallahnjd",
+            "icon"  : "facebook.svg"
+        },
+        {
+            "active": true,
+            "name"  : "twitter",
+            "link"  : "https://twitter.com/mohsenfallahnjd",
+            "icon"  : "twitter.svg"
+        },
+        {
+            "active": true,
+            "name"  : "steam",
+            "link"  : "https://steamcommunity.com/id/mohsenfallah/",
+            "icon"  : "steam.svg"
+        },
+        {
+            "active": true,
+            "name"  : "swarm",
+            "link"  : "https://foursquare.com/mohsenfallahnjd",
+            "icon"  : "swarm.svg"
+        },
+        {
+            "active": false,
+            "name"  : "tvtime",
+            "link"  : "https://tvtime.com/r/1nFBy",
+            "icon"  : "tvtime.png"
+        },
+        {
+            "active": true,
+            "name"  : "duolingo",
+            "link"  : "#mohsenfallahnjd@gmail.com",
+            "icon"  : "duolingo.svg"
+        },
+        {
+            "active": true,
+            "name"  : "twitch",
+            "link"  : "https://twitch.tv/mohsenfallahnjd",
+            "icon"  : "twitch.svg"
+        },
+        {
+            "active": true,
+            "name"  : "xbox",
+            "link"  : "http://live.xbox.com/en-US/Profile?gamertag=SamCharly4181",
+            "icon"  : "xbox.svg"
+        },
+        {
+            "active": true,
+            "name"  : "discord",
+            "link"  : "https://discordapp.com/users/665276578476851201",
+            "icon"  : "discord.svg"
+        },
+        {
+            "active": true,
+            "name"  : "whatsapp (Unfortunately 😥)",
+            "link"  : "https://wa.me/00989197582087",
+            "icon"  : "whatsapp.svg"
+        }
+    ]
+}

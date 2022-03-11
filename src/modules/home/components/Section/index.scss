@@ -1,0 +1,51 @@
+// -------------------------------------------------------------------------- //
+// Components: Section
+// -------------------------------------------------------------------------- //
+@use "@/assets/scss/colors" as colors;
+
+.c-section {
+    $parent: ".c-section";
+
+    display: flex;
+    overflow: hidden;
+    padding: 100px 0;
+    border-top: 1px solid mix(white, colors.$color-gray, 69%);
+
+    &--col {
+        flex-direction: column;
+
+        #{$parent}__title {
+            width: auto;
+            margin-right: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    &__title {
+        flex-shrink: 0;
+        width: 180px;
+        margin-right: 90px;
+        color: mix(white, colors.$color-blue, 20%);
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 3px;
+
+        @media screen and (max-width: 768px) {
+            width: auto;
+            margin-right: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

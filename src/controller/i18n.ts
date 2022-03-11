@@ -10,7 +10,7 @@ const { locales } = config;
 
 /**
  * Make locales empty object
- * 
+ *
  * @returns {object}
  */
 const makeLocalesObj = (): object => {
@@ -22,13 +22,16 @@ const makeLocalesObj = (): object => {
 };
 let messages: any = makeLocalesObj();
 type files = {
+    root: any | undefined,
     modules: any | undefined,
 };
 const importedFiles: files | any = {
+    root   : null,
     modules: null,
 };
 
 // Load files
+importedFiles.root = require.context('@/locales', true, /\.(js|ts|json)$/);
 importedFiles.modules = require.context('@modules', true, /\/locales[\S]*\.(js|ts|json)$/);
 
 /**
@@ -93,7 +96,6 @@ const dateTimeFormats = {
 
 // Register messages
 const i18n: any = createI18n({
-    legacy         : false,
     locale,
     fallbackLocale,
     messages,
