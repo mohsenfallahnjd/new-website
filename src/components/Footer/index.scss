@@ -10,6 +10,14 @@
     margin-top: 8em;
     padding-bottom: 3em;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .text {
+            margin: 5px auto;
+        }
+    }
+
     .text {
         opacity: 0.5;
     }
