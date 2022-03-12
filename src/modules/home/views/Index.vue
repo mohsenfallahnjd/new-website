@@ -32,7 +32,7 @@
                         data-icon="line-md:twitter-twotone"
                     />
                     <span
-                        data-hover="Twitter"
+                        :data-hover="$t('home.twitter')"
                         class="neon"
                     >
                         {{ $t('home.twitter') }}
@@ -46,6 +46,25 @@
 
             <p class="mt-15">
                 {{ $t('home.outside') }}
+                <br>
+                <br>
+                <a
+                    href="mailto:mohsenfallahnjd@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="twitter text-decoration"
+                >
+                    <span
+                        class="iconify"
+                        data-icon="bi:emoji-smile"
+                    />
+                    <span
+                        :data-hover="$t('home.say_hi')"
+                        class="neon"
+                    >
+                        {{ $t('home.say_hi') }}
+                    </span>
+                </a>
             </p>
         </div>
 

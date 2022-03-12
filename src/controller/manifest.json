@@ -1,6 +1,6 @@
 {
     "name"                : "Mohsen Fallahnejad Personal website",
-    "short_name"          : "theMohsen.me",
+    "short_name"          : "Mohsen Fallahnejad",
     "description"         : "Mohsen Fallahnejad Personal website, who is a front-end developer",
     "start_url"           : "/",
     "scope"               : "/",
@@ -10,7 +10,7 @@
     "theme_color"         : "#0000ff",
     "dir"                 : "ltr",
     "lang"                : "en",
-    "categories"          : [],
+    "categories"          : ["front-end"],
     "related_applications": [],
     "icons"               : [
         {

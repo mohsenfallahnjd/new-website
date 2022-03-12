@@ -11,6 +11,7 @@ export default {
 
     about  : 'If you want to know about me, you can visit my',
     twitter: 'Twitter',
+    say_hi : 'Say Hi',
 
     user_name : 'mohsenfallahnjd',
     first_name: 'Mohsen',

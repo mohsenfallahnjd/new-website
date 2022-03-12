@@ -52,6 +52,17 @@
             font-weight: 400;
             text-decoration: none;
 
+            &.text-decoration {
+                svg {
+                    margin-right: 3px;
+                }
+
+                span,
+                span::before {
+                    text-decoration: underline;
+                }
+            }
+
             span {
                 position: relative;
                 transition: transform 0.3s;
