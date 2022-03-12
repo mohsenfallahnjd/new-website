@@ -28,6 +28,14 @@ $neon-box-shadow:
 body {
     background-color: var(--white);
     color: var(--black);
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
 }
 
 body.dark {

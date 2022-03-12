@@ -10,7 +10,6 @@
         title    : 'Front-end developer',
         htmlAttrs: {
             lang: ['en'],
-            amp : true,
         },
         charset    : 'UTF-8',
         description: info.description,
