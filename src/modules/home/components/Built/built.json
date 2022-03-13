@@ -77,7 +77,7 @@
             "name": "CovidTracker",
             "repo": "https://github.com/mohsenfallahnjd/covid-tracker",
             "description": "PWA Coronavirus Tracker",
-            "demo" : "",
+            "demo" : "https://covid.themohsen.me",
             "technologies": ["Vue", "pwa"],
             "pwa": false
         },
