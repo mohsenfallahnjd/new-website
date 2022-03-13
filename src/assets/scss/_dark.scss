@@ -30,17 +30,24 @@ body {
     color: var(--black);
 
     &::-webkit-scrollbar {
+        width: 5px;
         background-color: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: transparent;
+        border-radius: 5px;
+        background-color: colors.$color-gray;
     }
 }
 
 body.dark {
     background-color: var(--black);
     color: var(--white);
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: colors.$color-blue;
+    }
 
     .twitter {
         overflow: visible !important;
