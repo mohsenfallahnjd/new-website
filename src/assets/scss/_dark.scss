@@ -30,7 +30,7 @@ body {
     color: var(--black);
 
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 6px;
         background-color: transparent;
     }
 
@@ -90,6 +90,7 @@ body.dark {
             right: 10px;
             left: 10px;
             box-shadow: $neon-box-shadow;
+            opacity: 0.3;
         }
 
         &.bold-title {
