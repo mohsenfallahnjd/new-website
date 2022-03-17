@@ -95,7 +95,7 @@
             "name": "SpeechRecogniser",
             "repo": "https://github.com/mohsenfallahnjd/004-JS-SpeechRecogniser",
             "description": "Simple Speech Recogniser on js",
-            "demo" : "",
+            "demo" : "https://speech.themohsen.me",
             "technologies": ["javascript"],
             "pwa": false
         },
@@ -104,7 +104,7 @@
             "name": "Rock Paper Scissors",
             "repo": "https://github.com/mohsenfallahnjd/003-JS-Rock-Paper-Scissors",
             "description": "Simple Rock Paper Scissors game",
-            "demo" : "",
+            "demo" : "https://rock.themohsen.me",
             "technologies": ["javascript"],
             "pwa": false
         }
