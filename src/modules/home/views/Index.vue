@@ -1,7 +1,49 @@
 <script setup lang="ts">
+    import { Ref, ref } from 'vue';
     import {
         Section, Skills, Socials, Built,
     } from '@modules/home/components/index.ts';
+
+    /**
+     * The information of currently play track on spotify
+     */
+    const trackInfo : Ref<{[k: string]: any}| null> = ref({});
+
+    /**
+     * Artists list
+     */
+    const artists: Ref<string> = ref('');
+
+    /**
+     * Return anchor link
+     *
+     * @param {string} link
+     * @param {string} title
+     * @returns {string}
+     */
+    const formatLink = (link: string, title: string): string => `<a class='color-blue neon text-decoration' href='${link}' target='_blank'>${title}</a>`;
+
+    /**
+     * Fetch spotify currently track information
+     */
+    const fetchInfo = () => {
+        fetch('https://themohsen.me/api/get')
+            .then((response) => response.json())
+            .then((data) => {
+                trackInfo.value = data.data;
+                artists.value = data.data.artists.map((i: any) => (
+                    formatLink(i.external_urls.spotify, i.name))).join(', ');
+            })
+            .catch((error) => {
+                console.error('There was an error!', error);
+            });
+    };
+
+    /**
+     * interval time for refresh fetchInfo
+     */
+    fetchInfo();
+    setInterval(fetchInfo, 20000);
 </script>
 
 <template>
@@ -66,6 +108,51 @@
                     </span>
                 </a>
             </p>
+
+            <div
+                v-if="trackInfo"
+                class="spotify-play"
+            >
+                <p v-if="trackInfo.artists">
+                    <span
+                        v-html="$t(
+                            'home.listening_to',
+                            {
+                                time: trackInfo.is_playing ? 'Now, I\'m Listening to ' : 'A few minutes ago, I was listening to',
+                                track: `<br />
+                                track: ${formatLink(trackInfo.href, trackInfo.name)} <br />
+                                ${trackInfo.album.total_tracks > 1 ? `album: ${formatLink(trackInfo.album.external_urls.spotify, trackInfo.album.name)} <br />` : ''}`,
+                                artist: `from: ${artists} <br />`
+                            }
+                        )"
+                    />
+                </p>
+                <div
+                    v-if="trackInfo.album"
+                    class="preview"
+                >
+                    <a
+                        v-if="trackInfo.album.images"
+                        :href="trackInfo.album.images[0].url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            :src="trackInfo.album.images.at(-1).url"
+                            :alt="trackInfo.album.name"
+                        >
+                    </a>
+                    <audio
+                        controls
+                        :src="trackInfo.preview_url"
+                        :disabled="!trackInfo.preview_url"
+                    >
+                        <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text -->
+                        {{ `Your browser does not support the` }} <code>{{ `audio` }}</code> {{ `element.` }}
+                        <track kind="captions">
+                    </audio>
+                </div>
+            </div>
         </div>
 
         <Section :title="$t('home.skills')">

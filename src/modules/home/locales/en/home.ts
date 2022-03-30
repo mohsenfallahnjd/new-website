@@ -16,7 +16,7 @@ export default {
     user_name : 'mohsenfallahnjd',
     first_name: 'Mohsen',
     on_social : 'You can find me with {userName} on all social networks.',
-    outside   : 'Outside of programming, I enjoy video games, watching soccer matches, studying, travelling, learning and creating anything that helps me and others.',
+    outside   : 'Outside of programming, I enjoy video games, watching soccer matches, studying, traveling, learning and creating anything that helps me and others.',
 
     skills      : 'I\'ve worked with:',
     socials     : 'I\'m available on:',
@@ -24,4 +24,6 @@ export default {
     demo        : 'Watch live',
     source      : 'Source',
     technologies: 'Technologies:',
+
+    listening_to: '{time} {track} {artist} on Spotify 🎧.',
 };
