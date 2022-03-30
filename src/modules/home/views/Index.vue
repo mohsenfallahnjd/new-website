@@ -43,7 +43,7 @@
      * interval time for refresh fetchInfo
      */
     fetchInfo();
-    setInterval(fetchInfo, 20000);
+    setInterval(fetchInfo, 180000);
 </script>
 
 <template>
