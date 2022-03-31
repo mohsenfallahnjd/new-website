@@ -2,11 +2,20 @@
     "items": [
         {
             "active": true,
+            "name": "Spotify api wrapper",
+            "repo": "https://github.com/mohsenfallahnjd/spotify-api-wrapper",
+            "description": "A wrapper base on node.js for working spotify api",
+            "demo" : "https://themohsen.me",
+            "technologies": ["nodejs", "express"],
+            "pwa": false
+        },
+        {
+            "active": true,
             "name": "Vite Starter",
             "repo": "https://github.com/mohsenfallahnjd/vite-starter",
             "description": "The project starter base on vite, vue3 and typescript with some plugins like ESLint, Stylelint, vue-router and i18n.",
             "demo" : "",
-            "technologies": ["vite", "vue3", "eslint", "stylelint", "i18n", "typescript", "javascript", "pwa", "vueMeta"],
+            "technologies": ["vite", "vue3", "eslint", "stylelint", "i18n", "typescript", "javascript", "pwa", "vueMeta", "Pinia"],
             "pwa": false
         },
         {
