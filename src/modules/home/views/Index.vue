@@ -31,8 +31,10 @@
             .then((response) => response.json())
             .then((data) => {
                 trackInfo.value = data.data;
-                artists.value = data.data.artists.map((i: any) => (
-                    formatLink(i.external_urls.spotify, i.name))).join(', ');
+                if (data.data && data.data.artists) {
+                    artists.value = data.data.artists.map((i: any) => (
+                        formatLink(i.external_urls.spotify, i.name))).join(', ');
+                }
             })
             .catch((error) => {
                 console.error('There was an error!', error);
