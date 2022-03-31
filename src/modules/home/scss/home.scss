@@ -131,6 +131,10 @@
             line-height: 1;
         }
 
+        a span {
+            font-weight: 400;
+        }
+
         .preview {
             @media screen and (max-width: 480px) {
                 flex-direction: column;

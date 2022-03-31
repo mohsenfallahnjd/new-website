@@ -21,7 +21,7 @@
      * @param {string} title
      * @returns {string}
      */
-    const formatLink = (link: string, title: string): string => `<a class='color-blue neon text-decoration' href='${link}' target='_blank'>${title}</a>`;
+    const formatLink = (link: string, title: string): string => `<a class='color-blue text-decoration' href='${link}' target='_blank'><span>${title}</span></a>`;
 
     /**
      * Fetch spotify currently track information
