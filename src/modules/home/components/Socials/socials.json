@@ -93,6 +93,12 @@
         },
         {
             "active": true,
+            "name"  : "virgool",
+            "link"  : "https://virgool.io/@mohsenfallahnjd",
+            "icon"  : "virgool.svg"
+        },
+        {
+            "active": true,
             "name"  : "steam",
             "link"  : "https://steamcommunity.com/id/mohsenfallah/",
             "icon"  : "steam.svg"
