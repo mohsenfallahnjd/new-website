@@ -79,7 +79,7 @@
             "description": "The Live Stream Platform",
             "demo" : "https://tv.guilandev.ir/",
             "technologies": ["Vue", "Laravel", "pwa"],
-            "pwa": false
+            "pwa": true
         },
         {
             "active": true,
@@ -88,7 +88,7 @@
             "description": "PWA Coronavirus Tracker",
             "demo" : "https://covid.themohsen.me",
             "technologies": ["Vue", "pwa"],
-            "pwa": false
+            "pwa": true
         },
         {
             "active": true,

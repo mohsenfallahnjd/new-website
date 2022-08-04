@@ -66,6 +66,7 @@
         }
 
         &__technology {
+            padding-left: 5px;
             color: mix(black, colors.$color-gray, 50%);
             list-style: none;
             font-weight: 400;
@@ -83,7 +84,6 @@
 
             &:not(:last-child) {
                 padding-right: 5px;
-                padding-left: 5px;
 
                 &::after {
                     content: "|";
@@ -116,6 +116,7 @@
             img {
                 object-fit: contain;
                 max-width: 25px;
+                margin-top: 3px;
             }
         }
 
@@ -126,7 +127,7 @@
 
             > :not(:first-child) {
                 &::before {
-                    content: "-";
+                    content: "/";
                     padding-right: 8px;
                 }
 

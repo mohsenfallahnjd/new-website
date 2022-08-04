@@ -1,7 +1,10 @@
 <script setup lang="ts">
     import { Ref, ref } from 'vue';
     import {
-        Section, Skills, Socials, Built,
+        SectionWrapper,
+        Skills,
+        Socials,
+        Built,
     } from '@modules/home/components/index.ts';
 
     /**
@@ -157,24 +160,24 @@
             </div>
         </div>
 
-        <Section :title="$t('home.skills')">
-            <Skills />
-        </Section>
+        <section-wrapper :title="$t('home.skills')">
+            <skills />
+        </section-wrapper>
 
-        <Section
+        <section-wrapper
             :title="$t('home.built_things')"
             class="bold-title"
             col
         >
-            <Built />
-        </Section>
+            <built />
+        </section-wrapper>
 
-        <Section
+        <section-wrapper
             :title="$t('home.socials')"
             col
         >
-            <Socials />
-        </Section>
+            <socials />
+        </section-wrapper>
     </div>
 </template>
 

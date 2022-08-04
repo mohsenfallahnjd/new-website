@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import { useMeta } from 'vue-meta';
     import { ref, Ref } from 'vue';
-    import { ReloadPWA, ThemeToggle, Footer } from '@components/index.ts';
+    import { ReloadPWA, ThemeToggle, FooterComponent } from '@components/index.ts';
 
     const webTitle: Ref<string> = ref('Mohsen Fallahnejad Personal website');
 
@@ -14,10 +14,10 @@
 </script>
 
 <template>
-    <ReloadPWA />
+    <reload-p-w-a />
 
     <header>
-        <ThemeToggle />
+        <theme-toggle />
     </header>
 
     <metainfo>
@@ -28,7 +28,7 @@
 
     <router-view />
 
-    <Footer />
+    <footer-component />
 </template>
 
 <style src="@/assets/scss/style.scss" lang="scss" />

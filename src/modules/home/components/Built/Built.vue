@@ -45,6 +45,20 @@
                 </ul>
 
                 <div class="c-built__item__footer">
+                    <component
+                        :is="!!item.demo ? 'a' : 'div'"
+                        :href="item.demo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        :class="['c-built__item__demo-link', !!item.demo ? '' : 'c-built__item__demo-link--disable']"
+                    >
+                        <span
+                            class="iconify"
+                            data-icon="fluent:movies-and-tv-16-regular"
+                        />
+                        {{ $t('home.demo') }}
+                    </component>
+
                     <span
                         v-if="item.pwa"
                         class="c-built__item__pwa-badge"
@@ -54,30 +68,6 @@
                             alt="pwa"
                         >
                     </span>
-
-                    <a
-                        v-if="item.demo"
-                        :href="item.demo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="c-built__item__demo-link"
-                    >
-                        <span
-                            class="iconify"
-                            data-icon="fluent:movies-and-tv-16-regular"
-                        />
-                        {{ $t('home.demo') }}
-                    </a>
-                    <div
-                        v-else
-                        class="c-built__item__demo-link c-built__item__demo-link--disable"
-                    >
-                        <span
-                            class="iconify"
-                            data-icon="fluent:movies-and-tv-16-regular"
-                        />
-                        {{ $t('home.demo') }}
-                    </div>
                 </div>
             </li>
         </template>

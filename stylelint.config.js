@@ -9,6 +9,7 @@ module.exports = {
         'custom-property-no-missing-var-function': null,
         'color-function-notation'                : 'legacy',
         'order/order'                            : null,
+        'function-no-unknown'                    : null,
         'at-rule-no-unknown'                     : [
             true,
             {

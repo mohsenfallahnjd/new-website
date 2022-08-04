@@ -21,7 +21,7 @@ export default {
     skills      : 'I\'ve worked with:',
     socials     : 'I\'m available on:',
     built_things: 'Things I\'ve Built',
-    demo        : 'Watch live',
+    demo        : 'Demo',
     source      : 'Source',
     technologies: 'Technologies:',
 
