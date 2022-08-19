@@ -65,7 +65,6 @@ module.exports = {
         'import/no-named-as-default'       : 'off',
         'import/no-extraneous-dependencies': 'off',
         'import/prefer-default-export'     : 'off',
-        // 'no-unused-vars'                   : ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
 
         'no-undef'                     : 'off',
         'vue/no-multiple-template-root': 'off',

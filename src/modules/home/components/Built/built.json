@@ -2,6 +2,33 @@
     "items": [
         {
             "active": true,
+            "name": "You Don't Know JS Yet",
+            "repo": "https://github.com/mohsenfallahnjd/ydkjs-vuepress",
+            "description": "You Don't Know JS Yet (book series) - 2nd Edition by vuepress. It will be updated automatically every day.",
+            "demo" : "https://ydkjs.ir",
+            "technologies": ["vite", "vuepress"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "React Starter with Bun runtime",
+            "repo": "https://github.com/mohsenfallahnjd/react-bun",
+            "description": "This is a React project bootstrapped with bun. This starter has react-router, eslint and stylelint rules and support tsx.",
+            "demo" : "",
+            "technologies": ["react", "bun", "eslint", "stylelint"],
+            "pwa": false
+        },
+        {
+            "active": true,
+            "name": "The Markdown reader",
+            "repo": "https://github.com/mohsenfallahnjd/md-reader",
+            "description": "This Markdown reader app, used from react-markdown.",
+            "demo" : "https://md.themohsen.me",
+            "technologies": ["react", "vite", "i18next", "eslint", "stylelint", "react-router", "react-markdown", "react-helmet-async"],
+            "pwa": false
+        },
+        {
+            "active": true,
             "name": "Spotify api wrapper",
             "repo": "https://github.com/mohsenfallahnjd/spotify-api-wrapper",
             "description": "A wrapper base on node.js for working spotify api",

@@ -38,6 +38,12 @@
         },
         {
             "active": true,
+            "name": "React",
+            "link": "https://reactjs.org/",
+            "icon": "react.svg"
+        },
+        {
+            "active": true,
             "name": "nuxt",
             "link": "https://nuxtjs.org/",
             "icon": "nuxt.png"
@@ -77,6 +83,12 @@
             "name": "vim",
             "link": "https://en.wikipedia.org/wiki/Vim_(text_editor)",
             "icon": "vim.png"
+        },
+        {
+            "active": true,
+            "name": "Bun",
+            "link": "https://bun.sh/",
+            "icon": "bun.png"
         },
         {
             "active": true,
